@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		5B7CD2AF25DDAB4600BEFC4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2AE25DDAB4600BEFC4E /* AppDelegate.swift */; };
-		5B7CD2B125DDAB4600BEFC4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2B025DDAB4600BEFC4E /* SceneDelegate.swift */; };
 		5B7CD2B325DDAB4600BEFC4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2B225DDAB4600BEFC4E /* ViewController.swift */; };
 		5B7CD2B625DDAB4600BEFC4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CD2B425DDAB4600BEFC4E /* Main.storyboard */; };
 		5B7CD2B925DDAB4600BEFC4E /* Rio_Restaurant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2B725DDAB4600BEFC4E /* Rio_Restaurant.xcdatamodeld */; };
 		5B7CD2BB25DDAB4900BEFC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CD2BA25DDAB4900BEFC4E /* Assets.xcassets */; };
 		5B7CD2BE25DDAB4900BEFC4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CD2BC25DDAB4900BEFC4E /* LaunchScreen.storyboard */; };
+		5B7CD2C925DDB76600BEFC4E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2C825DDB76600BEFC4E /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B7CD2AB25DDAB4600BEFC4E /* Rio Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rio Restaurant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7CD2AE25DDAB4600BEFC4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B7CD2B025DDAB4600BEFC4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5B7CD2B225DDAB4600BEFC4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B7CD2B525DDAB4600BEFC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B7CD2B825DDAB4600BEFC4E /* Rio_Restaurant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rio_Restaurant.xcdatamodel; sourceTree = "<group>"; };
 		5B7CD2BA25DDAB4900BEFC4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B7CD2BD25DDAB4900BEFC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B7CD2BF25DDAB4900BEFC4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B7CD2C825DDB76600BEFC4E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				5B7CD2AE25DDAB4600BEFC4E /* AppDelegate.swift */,
-				5B7CD2B025DDAB4600BEFC4E /* SceneDelegate.swift */,
 				5B7CD2B225DDAB4600BEFC4E /* ViewController.swift */,
 				5B7CD2B425DDAB4600BEFC4E /* Main.storyboard */,
 				5B7CD2BA25DDAB4900BEFC4E /* Assets.xcassets */,
 				5B7CD2BC25DDAB4900BEFC4E /* LaunchScreen.storyboard */,
 				5B7CD2BF25DDAB4900BEFC4E /* Info.plist */,
 				5B7CD2B725DDAB4600BEFC4E /* Rio_Restaurant.xcdatamodeld */,
+				5B7CD2C825DDB76600BEFC4E /* CoreDataManager.swift */,
 			);
 			path = "Rio Restaurant";
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 			files = (
 				5B7CD2B325DDAB4600BEFC4E /* ViewController.swift in Sources */,
 				5B7CD2B925DDAB4600BEFC4E /* Rio_Restaurant.xcdatamodeld in Sources */,
+				5B7CD2C925DDB76600BEFC4E /* CoreDataManager.swift in Sources */,
 				5B7CD2AF25DDAB4600BEFC4E /* AppDelegate.swift in Sources */,
-				5B7CD2B125DDAB4600BEFC4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7RWFZ45WK;
 				INFOPLIST_FILE = "Rio Restaurant/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fuzzix.Rio-Restaurant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -312,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7RWFZ45WK;
 				INFOPLIST_FILE = "Rio Restaurant/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fuzzix.Rio-Restaurant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
