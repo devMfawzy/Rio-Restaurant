@@ -8,24 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		5B7CD2AF25DDAB4600BEFC4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2AE25DDAB4600BEFC4E /* AppDelegate.swift */; };
-		5B7CD2B325DDAB4600BEFC4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2B225DDAB4600BEFC4E /* ViewController.swift */; };
+		5B7CD2B325DDAB4600BEFC4E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2B225DDAB4600BEFC4E /* MenuViewController.swift */; };
 		5B7CD2B625DDAB4600BEFC4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CD2B425DDAB4600BEFC4E /* Main.storyboard */; };
 		5B7CD2B925DDAB4600BEFC4E /* Rio_Restaurant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2B725DDAB4600BEFC4E /* Rio_Restaurant.xcdatamodeld */; };
 		5B7CD2BB25DDAB4900BEFC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CD2BA25DDAB4900BEFC4E /* Assets.xcassets */; };
 		5B7CD2BE25DDAB4900BEFC4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CD2BC25DDAB4900BEFC4E /* LaunchScreen.storyboard */; };
 		5B7CD2C925DDB76600BEFC4E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2C825DDB76600BEFC4E /* CoreDataManager.swift */; };
+		5B7CD2DB25DEDACD00BEFC4E /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2D925DEDACD00BEFC4E /* CategoryCell.swift */; };
+		5B7CD2DC25DEDACD00BEFC4E /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CD2DA25DEDACD00BEFC4E /* CategoryCell.xib */; };
+		5B7CD2E225DEDDD400BEFC4E /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2E025DEDDD400BEFC4E /* ProductCell.swift */; };
+		5B7CD2E325DEDDD400BEFC4E /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CD2E125DEDDD400BEFC4E /* ProductCell.xib */; };
+		5B7CD2E925DEE56400BEFC4E /* UICollectionViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2E825DEE56400BEFC4E /* UICollectionViewCell+ReuseIdentifier.swift */; };
+		5B7CD2F025DEE8E400BEFC4E /* CollectionView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD2EF25DEE8E400BEFC4E /* CollectionView+DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B7CD2AB25DDAB4600BEFC4E /* Rio Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rio Restaurant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7CD2AE25DDAB4600BEFC4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B7CD2B225DDAB4600BEFC4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B7CD2B225DDAB4600BEFC4E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		5B7CD2B525DDAB4600BEFC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B7CD2B825DDAB4600BEFC4E /* Rio_Restaurant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rio_Restaurant.xcdatamodel; sourceTree = "<group>"; };
 		5B7CD2BA25DDAB4900BEFC4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B7CD2BD25DDAB4900BEFC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B7CD2BF25DDAB4900BEFC4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B7CD2C825DDB76600BEFC4E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		5B7CD2D925DEDACD00BEFC4E /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		5B7CD2DA25DEDACD00BEFC4E /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		5B7CD2E025DEDDD400BEFC4E /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		5B7CD2E125DEDDD400BEFC4E /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		5B7CD2E825DEE56400BEFC4E /* UICollectionViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		5B7CD2EF25DEE8E400BEFC4E /* CollectionView+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+DataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +71,53 @@
 			isa = PBXGroup;
 			children = (
 				5B7CD2AE25DDAB4600BEFC4E /* AppDelegate.swift */,
-				5B7CD2B225DDAB4600BEFC4E /* ViewController.swift */,
-				5B7CD2B425DDAB4600BEFC4E /* Main.storyboard */,
-				5B7CD2BA25DDAB4900BEFC4E /* Assets.xcassets */,
-				5B7CD2BC25DDAB4900BEFC4E /* LaunchScreen.storyboard */,
 				5B7CD2BF25DDAB4900BEFC4E /* Info.plist */,
+				5B7CD2BA25DDAB4900BEFC4E /* Assets.xcassets */,
 				5B7CD2B725DDAB4600BEFC4E /* Rio_Restaurant.xcdatamodeld */,
 				5B7CD2C825DDB76600BEFC4E /* CoreDataManager.swift */,
+				5B7CD2E525DEE3EA00BEFC4E /* Storyboards */,
+				5B7CD2D325DED9F400BEFC4E /* UI Cells */,
+				5B7CD2B225DDAB4600BEFC4E /* MenuViewController.swift */,
+				5B7CD2EF25DEE8E400BEFC4E /* CollectionView+DataSource.swift */,
 			);
 			path = "Rio Restaurant";
+			sourceTree = "<group>";
+		};
+		5B7CD2D325DED9F400BEFC4E /* UI Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5B7CD2E825DEE56400BEFC4E /* UICollectionViewCell+ReuseIdentifier.swift */,
+				5B7CD2DF25DEDD6800BEFC4E /* Product Cell */,
+				5B7CD2D825DEDA9C00BEFC4E /* Category Cell */,
+			);
+			path = "UI Cells";
+			sourceTree = "<group>";
+		};
+		5B7CD2D825DEDA9C00BEFC4E /* Category Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5B7CD2D925DEDACD00BEFC4E /* CategoryCell.swift */,
+				5B7CD2DA25DEDACD00BEFC4E /* CategoryCell.xib */,
+			);
+			path = "Category Cell";
+			sourceTree = "<group>";
+		};
+		5B7CD2DF25DEDD6800BEFC4E /* Product Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5B7CD2E025DEDDD400BEFC4E /* ProductCell.swift */,
+				5B7CD2E125DEDDD400BEFC4E /* ProductCell.xib */,
+			);
+			path = "Product Cell";
+			sourceTree = "<group>";
+		};
+		5B7CD2E525DEE3EA00BEFC4E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5B7CD2B425DDAB4600BEFC4E /* Main.storyboard */,
+				5B7CD2BC25DDAB4900BEFC4E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +177,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7CD2DC25DEDACD00BEFC4E /* CategoryCell.xib in Resources */,
 				5B7CD2BE25DDAB4900BEFC4E /* LaunchScreen.storyboard in Resources */,
+				5B7CD2E325DEDDD400BEFC4E /* ProductCell.xib in Resources */,
 				5B7CD2BB25DDAB4900BEFC4E /* Assets.xcassets in Resources */,
 				5B7CD2B625DDAB4600BEFC4E /* Main.storyboard in Resources */,
 			);
@@ -140,10 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7CD2B325DDAB4600BEFC4E /* ViewController.swift in Sources */,
+				5B7CD2B325DDAB4600BEFC4E /* MenuViewController.swift in Sources */,
 				5B7CD2B925DDAB4600BEFC4E /* Rio_Restaurant.xcdatamodeld in Sources */,
 				5B7CD2C925DDB76600BEFC4E /* CoreDataManager.swift in Sources */,
+				5B7CD2F025DEE8E400BEFC4E /* CollectionView+DataSource.swift in Sources */,
+				5B7CD2E225DEDDD400BEFC4E /* ProductCell.swift in Sources */,
 				5B7CD2AF25DDAB4600BEFC4E /* AppDelegate.swift in Sources */,
+				5B7CD2DB25DEDACD00BEFC4E /* CategoryCell.swift in Sources */,
+				5B7CD2E925DEE56400BEFC4E /* UICollectionViewCell+ReuseIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
