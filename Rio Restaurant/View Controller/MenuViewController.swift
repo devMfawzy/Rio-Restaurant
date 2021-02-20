@@ -13,22 +13,39 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    var viewModel: MenuViewModeling?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
     }
     
+    static func instance(viewModel: MenuViewModeling) ->  MenuViewController? {
+        guard let menuViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as? MenuViewController else {
+            return nil
+        }
+        menuViewController.viewModel = viewModel
+        return menuViewController
+    }
+    
     private func setupView() {
+        if self.viewModel == nil {
+            self.viewModel = MenuViewModel(viewType: .category, service: RestaurantService())
+        }
+        self.viewModel?.delegate = self
         self.collectionView.register(UINib(nibName: CategoryCell.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: CategoryCell.reuseIdentifier)
         self.collectionView.register(UINib(nibName: ProductCell.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: ProductCell.reuseIdentifier)
         self.collectionView.collectionViewLayout = self.collectionViewLayout
-        self.collectionView.reloadData()
+        self.activityIndicator.startAnimating()
+        self.viewModel?.didLoadViewController()
+        
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        self.collectionView.collectionViewLayout.invalidateLayout()
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        self.activityIndicator.center = self.view.center
     }
     
     var collectionViewLayout: UICollectionViewLayout {

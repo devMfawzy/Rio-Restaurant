@@ -26,4 +26,9 @@ class ProductCell: UICollectionViewCell {
         layer.masksToBounds = true
     }
 
+    func config(viewModel: ProductViewModeling) {
+        self.productName.text = viewModel.name
+        self.priceLabel.text = viewModel.price
+    }
+    
 }

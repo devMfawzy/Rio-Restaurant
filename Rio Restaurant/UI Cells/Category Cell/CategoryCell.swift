@@ -23,5 +23,9 @@ class CategoryCell: UICollectionViewCell {
         layer.borderColor = UIColor.gray.cgColor
         layer.masksToBounds = true
     }
+    
+    func config(viewModel: CategoryViewModeling) {
+        self.nameLabel.text = viewModel.name
+    }
 
 }
