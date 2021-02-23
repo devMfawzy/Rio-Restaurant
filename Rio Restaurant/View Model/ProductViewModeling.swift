@@ -10,5 +10,5 @@ import Foundation
 protocol ProductViewModeling {
     var name: String { get }
     var price: String { get }
-    var imageURL: URL { get }
+    var image: String? { get }
 }

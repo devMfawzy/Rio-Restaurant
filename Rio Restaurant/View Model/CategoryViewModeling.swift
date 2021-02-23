@@ -8,6 +8,6 @@
 import Foundation
 
 protocol CategoryViewModeling {
-    var id: String { get }
-    var name: String { get }
+    var id: String? { get }
+    var name: String? { get }
 }

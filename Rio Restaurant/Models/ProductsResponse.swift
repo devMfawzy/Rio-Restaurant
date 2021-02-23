@@ -7,7 +7,6 @@
 
 import Foundation
 
-struct ProductsResponse: Decodable {
+struct ProductsResponse: Codable {
     var data: [Product]
-    var meta: MetaData
 }

@@ -15,4 +15,7 @@ protocol MenuViewModeling {
     func didLoadViewController()
     func categoryAt(row: Int) -> CategoryViewModeling
     func productAt(row: Int) -> ProductViewModeling
+    func getNextPage()
+    func getPreviousPage()
+    func retry(page: Int)
 }

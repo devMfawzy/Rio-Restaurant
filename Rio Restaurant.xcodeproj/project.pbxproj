@@ -35,6 +35,11 @@
 		5B7CD33625E06C5400BEFC4E /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD33525E06C5400BEFC4E /* RestaurantService.swift */; };
 		5B7CD33A25E07A1600BEFC4E /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD33925E07A1600BEFC4E /* CategoryViewModel.swift */; };
 		5B7CD33D25E07F0800BEFC4E /* MenuViewController+MenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD33C25E07F0800BEFC4E /* MenuViewController+MenuDelegate.swift */; };
+		5B7CD34A25E1F0CF00BEFC4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD34925E1F0CF00BEFC4E /* Constants.swift */; };
+		5B7CD35725E2030E00BEFC4E /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD35625E2030E00BEFC4E /* ProductViewModel.swift */; };
+		5B7CD36C25E552FB00BEFC4E /* MenuViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD36B25E552FA00BEFC4E /* MenuViewController+UICollectionViewDelegate.swift */; };
+		5B7CD36F25E5536500BEFC4E /* CodingUserInfoKey+InfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD36E25E5536500BEFC4E /* CodingUserInfoKey+InfoKey.swift */; };
+		5B7CD37225E553A500BEFC4E /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD37125E553A500BEFC4E /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +73,11 @@
 		5B7CD33525E06C5400BEFC4E /* RestaurantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantService.swift; sourceTree = "<group>"; };
 		5B7CD33925E07A1600BEFC4E /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		5B7CD33C25E07F0800BEFC4E /* MenuViewController+MenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+MenuDelegate.swift"; sourceTree = "<group>"; };
+		5B7CD34925E1F0CF00BEFC4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5B7CD35625E2030E00BEFC4E /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		5B7CD36B25E552FA00BEFC4E /* MenuViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		5B7CD36E25E5536500BEFC4E /* CodingUserInfoKey+InfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+InfoKey.swift"; sourceTree = "<group>"; };
+		5B7CD37125E553A500BEFC4E /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +115,15 @@
 				5B7CD2BA25DDAB4900BEFC4E /* Assets.xcassets */,
 				5B7CD2B725DDAB4600BEFC4E /* Rio_Restaurant.xcdatamodeld */,
 				5B7CD2C825DDB76600BEFC4E /* CoreDataManager.swift */,
+				5B7CD36E25E5536500BEFC4E /* CodingUserInfoKey+InfoKey.swift */,
+				5B7CD37125E553A500BEFC4E /* Errors.swift */,
 				5B7CD2E525DEE3EA00BEFC4E /* Storyboards */,
 				5B7CD2D325DED9F400BEFC4E /* UI Cells */,
 				5B7CD2FB25E03BF600BEFC4E /* View Controller */,
 				5B7CD2FD25E03C7000BEFC4E /* Models */,
 				5B7CD33425E06BE200BEFC4E /* Restaurant Service */,
 				5B7CD2FC25E03C3A00BEFC4E /* View Model */,
+				5B7CD34825E1F08D00BEFC4E /* Constants */,
 			);
 			path = "Rio Restaurant";
 			sourceTree = "<group>";
@@ -157,6 +170,7 @@
 			children = (
 				5B7CD2B225DDAB4600BEFC4E /* MenuViewController.swift */,
 				5B7CD2EF25DEE8E400BEFC4E /* CollectionView+DataSource.swift */,
+				5B7CD36B25E552FA00BEFC4E /* MenuViewController+UICollectionViewDelegate.swift */,
 				5B7CD33C25E07F0800BEFC4E /* MenuViewController+MenuDelegate.swift */,
 			);
 			path = "View Controller";
@@ -166,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				5B7CD30E25E0427B00BEFC4E /* ProductViewModeling.swift */,
+				5B7CD35625E2030E00BEFC4E /* ProductViewModel.swift */,
 				5B7CD31225E043AF00BEFC4E /* CategoryViewModeling.swift */,
 				5B7CD33925E07A1600BEFC4E /* CategoryViewModel.swift */,
 				5B7CD31625E044AD00BEFC4E /* MenuViewModeling.swift */,
@@ -195,6 +210,14 @@
 				5B7CD33525E06C5400BEFC4E /* RestaurantService.swift */,
 			);
 			path = "Restaurant Service";
+			sourceTree = "<group>";
+		};
+		5B7CD34825E1F08D00BEFC4E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5B7CD34925E1F0CF00BEFC4E /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,9 +312,14 @@
 				5B7CD2DB25DEDACD00BEFC4E /* CategoryCell.swift in Sources */,
 				5B7CD31A25E0458500BEFC4E /* RestaurantServiceProtocol.swift in Sources */,
 				5B7CD30F25E0427B00BEFC4E /* ProductViewModeling.swift in Sources */,
+				5B7CD37225E553A500BEFC4E /* Errors.swift in Sources */,
+				5B7CD36F25E5536500BEFC4E /* CodingUserInfoKey+InfoKey.swift in Sources */,
 				5B7CD32F25E0680500BEFC4E /* MenuViewType.swift in Sources */,
 				5B7CD2E925DEE56400BEFC4E /* UICollectionViewCell+ReuseIdentifier.swift in Sources */,
 				5B7CD30C25E0412F00BEFC4E /* Product.swift in Sources */,
+				5B7CD34A25E1F0CF00BEFC4E /* Constants.swift in Sources */,
+				5B7CD35725E2030E00BEFC4E /* ProductViewModel.swift in Sources */,
+				5B7CD36C25E552FB00BEFC4E /* MenuViewController+UICollectionViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

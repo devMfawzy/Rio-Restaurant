@@ -11,11 +11,11 @@ class MenuViewController: UIViewController {
 
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var viewModel: MenuViewModeling?
+    var service: RestaurantServiceProtocol = RestaurantService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class MenuViewController: UIViewController {
     }
     
     static func instance(viewModel: MenuViewModeling) ->  MenuViewController? {
-        guard let menuViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as? MenuViewController else {
+        guard let menuViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else {
             return nil
         }
         menuViewController.viewModel = viewModel
@@ -32,7 +32,7 @@ class MenuViewController: UIViewController {
     
     private func setupView() {
         if self.viewModel == nil {
-            self.viewModel = MenuViewModel(viewType: .category, service: RestaurantService())
+            self.viewModel = MenuViewModel(viewType: .category, service: self.service)
         }
         self.viewModel?.delegate = self
         self.collectionView.register(UINib(nibName: CategoryCell.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: CategoryCell.reuseIdentifier)
@@ -40,7 +40,12 @@ class MenuViewController: UIViewController {
         self.collectionView.collectionViewLayout = self.collectionViewLayout
         self.activityIndicator.startAnimating()
         self.viewModel?.didLoadViewController()
-        
+        switch viewModel?.viewType {
+        case .product(category: let categoryId):
+            self.navigationItem.title = Category.category(id: categoryId)?.name
+        default:
+            return
+        }
     }
     
     override func viewWillLayoutSubviews() {
@@ -67,6 +72,20 @@ class MenuViewController: UIViewController {
     var itemSize: CGSize {
         let size:CGFloat = UIDevice.current.orientation.isLandscape ? (gridHeight/5)-80 : (gridWidth/3)-40
         return CGSize(width: size, height: size)
+    }
+    
+    @IBAction func didTapNextButton(_ sender: UIButton) {
+        sender.isEnabled = false
+        previousButton.isEnabled = false
+        self.activityIndicator.startAnimating()
+        viewModel?.getNextPage()
+    }
+    
+    @IBAction func didTapPreviousButton(_ sender: UIButton) {
+        sender.isEnabled = false
+        nextButton.isEnabled = false
+        self.activityIndicator.startAnimating()
+        viewModel?.getPreviousPage()
     }
     
 }

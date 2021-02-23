@@ -10,7 +10,6 @@ import Foundation
 protocol MenuDelegate: class {
     func didGetCategories(_ categories: [CategoryViewModeling])
     func didGetProducts(_ products: [ProductViewModeling])
-    func didGetFirstPage()
-    func didGetLastPage()
-    func didGetError(message: String)
+    func didGetEmptySet()
+    func didGetError(message: String, page: Int)
 }

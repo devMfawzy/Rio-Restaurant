@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum MenuViewType {
+enum MenuViewType: Equatable {
     case category
-    case product
+    case product(category: String)
 }

@@ -9,8 +9,8 @@ import Foundation
 
 class CategoryViewModel: CategoryViewModeling {
     
-    var id: String
-    var name: String
+    var id: String?
+    var name: String?
     
     init(model: Category) {
         self.id = model.id

@@ -8,8 +8,8 @@
 import Foundation
 
 protocol RestaurantServiceProtocol {
-    var categoriesRequestURL: URL? { get }
-    var productsRequestURL: URL? { get }
-    func getNextCategories(completion: @escaping ([Category], String?)->Void)
-    func getNextProducts(category: String, completion: @escaping ([Product], String?)->Void)
+    func categoriesRequestURL(page: Int) ->  URL?
+    func productsRequestURL(page: Int, category: String) ->  URL? 
+    func fetchCategories(count: Int, page: Int, completion: @escaping ([Category], String?)->Void)
+    func fetchProducts(category: String, count: Int, page: Int, completion: @escaping ([Product], String?)->Void)
 }
