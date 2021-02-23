@@ -5,7 +5,7 @@
 //  Created by Mohamed Fawzy on 18/02/2021.
 //
 
-import UIKit
+import Kingfisher
 
 class ProductCell: UICollectionViewCell {
 
@@ -29,6 +29,10 @@ class ProductCell: UICollectionViewCell {
     func config(viewModel: ProductViewModeling) {
         self.productName.text = viewModel.name
         self.priceLabel.text = viewModel.price
+        guard let image = viewModel.image, let url = URL(string: image) else {
+            return
+        }
+        productImageView.kf.setImage(with: url)
     }
     
 }

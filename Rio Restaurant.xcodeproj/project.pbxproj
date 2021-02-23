@@ -40,6 +40,7 @@
 		5B7CD36C25E552FB00BEFC4E /* MenuViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD36B25E552FA00BEFC4E /* MenuViewController+UICollectionViewDelegate.swift */; };
 		5B7CD36F25E5536500BEFC4E /* CodingUserInfoKey+InfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD36E25E5536500BEFC4E /* CodingUserInfoKey+InfoKey.swift */; };
 		5B7CD37225E553A500BEFC4E /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7CD37125E553A500BEFC4E /* Errors.swift */; };
+		7148B6D832AB349631B19221 /* Pods_Rio_Restaurant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E110A371ACC5414EDC6A4D /* Pods_Rio_Restaurant.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,9 @@
 		5B7CD36B25E552FA00BEFC4E /* MenuViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		5B7CD36E25E5536500BEFC4E /* CodingUserInfoKey+InfoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+InfoKey.swift"; sourceTree = "<group>"; };
 		5B7CD37125E553A500BEFC4E /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		B4E110A371ACC5414EDC6A4D /* Pods_Rio_Restaurant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rio_Restaurant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C956CB54CBF577842CFC9724 /* Pods-Rio Restaurant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rio Restaurant.debug.xcconfig"; path = "Target Support Files/Pods-Rio Restaurant/Pods-Rio Restaurant.debug.xcconfig"; sourceTree = "<group>"; };
+		E046F08CD03A9C3143B8F662 /* Pods-Rio Restaurant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rio Restaurant.release.xcconfig"; path = "Target Support Files/Pods-Rio Restaurant/Pods-Rio Restaurant.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7148B6D832AB349631B19221 /* Pods_Rio_Restaurant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +101,8 @@
 			children = (
 				5B7CD2AD25DDAB4600BEFC4E /* Rio Restaurant */,
 				5B7CD2AC25DDAB4600BEFC4E /* Products */,
+				642BD480A837540C098A9FEE /* Pods */,
+				BF535F3CA5391A448E711284 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +227,24 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		642BD480A837540C098A9FEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C956CB54CBF577842CFC9724 /* Pods-Rio Restaurant.debug.xcconfig */,
+				E046F08CD03A9C3143B8F662 /* Pods-Rio Restaurant.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF535F3CA5391A448E711284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4E110A371ACC5414EDC6A4D /* Pods_Rio_Restaurant.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B7CD2C225DDAB4900BEFC4E /* Build configuration list for PBXNativeTarget "Rio Restaurant" */;
 			buildPhases = (
+				FA06BFBA3D61B67A07FF85E4 /* [CP] Check Pods Manifest.lock */,
 				5B7CD2A725DDAB4600BEFC4E /* Sources */,
 				5B7CD2A825DDAB4600BEFC4E /* Frameworks */,
 				5B7CD2A925DDAB4600BEFC4E /* Resources */,
+				87F662C51046EDC4506996EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,6 +313,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87F662C51046EDC4506996EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rio Restaurant/Pods-Rio Restaurant-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rio Restaurant/Pods-Rio Restaurant-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rio Restaurant/Pods-Rio Restaurant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA06BFBA3D61B67A07FF85E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rio Restaurant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B7CD2A725DDAB4600BEFC4E /* Sources */ = {
@@ -463,6 +532,7 @@
 		};
 		5B7CD2C325DDAB4900BEFC4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C956CB54CBF577842CFC9724 /* Pods-Rio Restaurant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,6 +553,7 @@
 		};
 		5B7CD2C425DDAB4900BEFC4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E046F08CD03A9C3143B8F662 /* Pods-Rio Restaurant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

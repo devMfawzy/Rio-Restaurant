@@ -1,0 +1,6 @@
+framework module Pods_Rio_Restaurant {
+  umbrella header "Pods-Rio Restaurant-umbrella.h"
+
+  export *
+  module * { export * }
+}
